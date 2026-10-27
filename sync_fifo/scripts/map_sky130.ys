@@ -1,0 +1,10 @@
+read_verilog rtl/sync_fifo.v
+hierarchy -check -top sync_fifo
+synth -top sync_fifo -noabc
+dfflibmap -liberty /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+clean
+check
+stat -liberty /home/vinith/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr results/sync_fifo_sky130.v
+write_json results/sync_fifo_sky130.json

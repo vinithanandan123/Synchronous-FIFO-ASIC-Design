@@ -1,0 +1,6000 @@
+{
+  "creator": "Yosys 0.69+169 (git sha1 c09944d8e, GNU /usr/bin/c++ 15.2.0)",
+  "modules": {
+    "sync_fifo": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "rtl/sync_fifo.v:3.1-86.10"
+      },
+      "parameter_default_values": {
+        "ADDR_WIDTH": "00000000000000000000000000000100",
+        "DATA_WIDTH": "00000000000000000000000000001000"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "wr_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "rd_en": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "din": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13 ]
+        },
+        "dout": {
+          "direction": "output",
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21 ]
+        },
+        "full": {
+          "direction": "output",
+          "bits": [ 22 ]
+        },
+        "empty": {
+          "direction": "output",
+          "bits": [ 23 ]
+        }
+      },
+      "cells": {
+        "$abc$937$blif$937$0": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__clkinv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$abc$937$blif$937$1": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__clkinv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 26 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$abc$937$blif$937$10": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 29 ],
+            "X": [ 30 ]
+          }
+        },
+        "$abc$937$blif$937$100": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 31 ],
+            "B1": [ 32 ],
+            "X": [ 33 ]
+          }
+        },
+        "$abc$937$blif$937$101": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 34 ],
+            "B1": [ 33 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$abc$937$blif$937$102": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a211o_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 36 ],
+            "B1": [ 37 ],
+            "C1": [ 32 ],
+            "X": [ 38 ]
+          }
+        },
+        "$abc$937$blif$937$103": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a31oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 35 ],
+            "A3": [ 38 ],
+            "B1": [ 40 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$abc$937$blif$937$104": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 42 ],
+            "B1": [ 41 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$abc$937$blif$937$105": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 44 ],
+            "A1": [ 45 ],
+            "S": [ 24 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$abc$937$blif$937$106": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 47 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$abc$937$blif$937$107": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 49 ],
+            "B1": [ 32 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$abc$937$blif$937$108": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 46 ],
+            "B1": [ 48 ],
+            "B2": [ 50 ],
+            "C1": [ 39 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$abc$937$blif$937$109": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 52 ],
+            "A1": [ 53 ],
+            "A2": [ 54 ],
+            "A3": [ 55 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 56 ]
+          }
+        },
+        "$abc$937$blif$937$11": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 30 ],
+            "X": [ 57 ]
+          }
+        },
+        "$abc$937$blif$937$110": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 56 ],
+            "B1": [ 40 ],
+            "X": [ 58 ]
+          }
+        },
+        "$abc$937$blif$937$111": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 51 ],
+            "A2": [ 58 ],
+            "B1": [ 59 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$abc$937$blif$937$112": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 15 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$abc$937$blif$937$113": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 43 ],
+            "A2": [ 60 ],
+            "B1": [ 62 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$abc$937$blif$937$114": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 64 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$abc$937$blif$937$115": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 66 ],
+            "A1": [ 67 ],
+            "A2": [ 68 ],
+            "A3": [ 69 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 70 ]
+          }
+        },
+        "$abc$937$blif$937$116": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 71 ],
+            "B1": [ 32 ],
+            "X": [ 72 ]
+          }
+        },
+        "$abc$937$blif$937$117": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 73 ],
+            "B1": [ 72 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$abc$937$blif$937$118": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a211o_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 75 ],
+            "B1": [ 65 ],
+            "C1": [ 32 ],
+            "X": [ 76 ]
+          }
+        },
+        "$abc$937$blif$937$119": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a31oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 74 ],
+            "A3": [ 76 ],
+            "B1": [ 40 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$abc$937$blif$937$12": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 4 ],
+            "SLEEP": [ 22 ],
+            "X": [ 78 ]
+          }
+        },
+        "$abc$937$blif$937$120": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 70 ],
+            "B1": [ 77 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$abc$937$blif$937$121": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 80 ],
+            "A1": [ 81 ],
+            "S": [ 24 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$abc$937$blif$937$122": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 83 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$abc$937$blif$937$123": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 85 ],
+            "B1": [ 32 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$abc$937$blif$937$124": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 82 ],
+            "B1": [ 84 ],
+            "B2": [ 86 ],
+            "C1": [ 39 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$abc$937$blif$937$125": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 88 ],
+            "A1": [ 89 ],
+            "A2": [ 90 ],
+            "A3": [ 91 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 92 ]
+          }
+        },
+        "$abc$937$blif$937$126": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 92 ],
+            "B1": [ 40 ],
+            "X": [ 93 ]
+          }
+        },
+        "$abc$937$blif$937$127": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 87 ],
+            "A2": [ 93 ],
+            "B1": [ 59 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$abc$937$blif$937$128": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 16 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$abc$937$blif$937$129": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 79 ],
+            "A2": [ 94 ],
+            "B1": [ 95 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$abc$937$blif$937$13": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand3b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 22 ],
+            "B": [ 4 ],
+            "C": [ 97 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$abc$937$blif$937$130": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 99 ],
+            "A1": [ 100 ],
+            "A2": [ 101 ],
+            "A3": [ 102 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 103 ]
+          }
+        },
+        "$abc$937$blif$937$131": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 104 ],
+            "A1": [ 105 ],
+            "A2": [ 106 ],
+            "A3": [ 107 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 108 ]
+          }
+        },
+        "$abc$937$blif$937$132": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 108 ],
+            "A1": [ 103 ],
+            "S": [ 40 ],
+            "Y": [ 109 ]
+          }
+        },
+        "$abc$937$blif$937$133": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 110 ],
+            "A1": [ 111 ],
+            "S": [ 24 ],
+            "Y": [ 112 ]
+          }
+        },
+        "$abc$937$blif$937$134": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 113 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$abc$937$blif$937$135": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 115 ],
+            "B1": [ 32 ],
+            "Y": [ 116 ]
+          }
+        },
+        "$abc$937$blif$937$136": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 112 ],
+            "B1": [ 114 ],
+            "B2": [ 116 ],
+            "C1": [ 40 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$abc$937$blif$937$137": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 118 ],
+            "A1": [ 119 ],
+            "A2": [ 120 ],
+            "A3": [ 121 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 122 ]
+          }
+        },
+        "$abc$937$blif$937$138": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 40 ],
+            "A2": [ 122 ],
+            "B1": [ 39 ],
+            "X": [ 123 ]
+          }
+        },
+        "$abc$937$blif$937$139": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 109 ],
+            "B1": [ 61 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$abc$937$blif$937$14": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__and4b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 22 ],
+            "B": [ 4 ],
+            "C": [ 97 ],
+            "D": [ 125 ],
+            "X": [ 126 ]
+          }
+        },
+        "$abc$937$blif$937$140": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 117 ],
+            "A2": [ 123 ],
+            "B1": [ 124 ],
+            "Y": [ 127 ]
+          }
+        },
+        "$abc$937$blif$937$141": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 17 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 128 ]
+          }
+        },
+        "$abc$937$blif$937$142": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 127 ],
+            "B": [ 128 ],
+            "Y": [ 129 ]
+          }
+        },
+        "$abc$937$blif$937$143": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 130 ],
+            "Y": [ 131 ]
+          }
+        },
+        "$abc$937$blif$937$144": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 132 ],
+            "A1": [ 133 ],
+            "A2": [ 134 ],
+            "A3": [ 135 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 136 ]
+          }
+        },
+        "$abc$937$blif$937$145": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 137 ],
+            "B1": [ 32 ],
+            "X": [ 138 ]
+          }
+        },
+        "$abc$937$blif$937$146": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 139 ],
+            "B1": [ 138 ],
+            "Y": [ 140 ]
+          }
+        },
+        "$abc$937$blif$937$147": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a211o_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 141 ],
+            "B1": [ 131 ],
+            "C1": [ 32 ],
+            "X": [ 142 ]
+          }
+        },
+        "$abc$937$blif$937$148": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a31oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 140 ],
+            "A3": [ 142 ],
+            "B1": [ 40 ],
+            "Y": [ 143 ]
+          }
+        },
+        "$abc$937$blif$937$149": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 136 ],
+            "B1": [ 143 ],
+            "Y": [ 144 ]
+          }
+        },
+        "$abc$937$blif$937$15": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 126 ],
+            "Y": [ 146 ]
+          }
+        },
+        "$abc$937$blif$937$150": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 147 ],
+            "A1": [ 148 ],
+            "S": [ 24 ],
+            "Y": [ 149 ]
+          }
+        },
+        "$abc$937$blif$937$151": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 150 ],
+            "Y": [ 151 ]
+          }
+        },
+        "$abc$937$blif$937$152": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 152 ],
+            "A2": [ 25 ],
+            "B1": [ 32 ],
+            "Y": [ 153 ]
+          }
+        },
+        "$abc$937$blif$937$153": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 149 ],
+            "B1": [ 151 ],
+            "B2": [ 153 ],
+            "C1": [ 39 ],
+            "Y": [ 154 ]
+          }
+        },
+        "$abc$937$blif$937$154": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 155 ],
+            "A1": [ 156 ],
+            "A2": [ 157 ],
+            "A3": [ 158 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 159 ]
+          }
+        },
+        "$abc$937$blif$937$155": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 159 ],
+            "B1": [ 40 ],
+            "X": [ 160 ]
+          }
+        },
+        "$abc$937$blif$937$156": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 154 ],
+            "A2": [ 160 ],
+            "B1": [ 59 ],
+            "Y": [ 161 ]
+          }
+        },
+        "$abc$937$blif$937$157": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 18 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 162 ]
+          }
+        },
+        "$abc$937$blif$937$158": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 144 ],
+            "A2": [ 161 ],
+            "B1": [ 162 ],
+            "Y": [ 163 ]
+          }
+        },
+        "$abc$937$blif$937$159": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 164 ],
+            "A1": [ 165 ],
+            "A2": [ 166 ],
+            "A3": [ 167 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 168 ]
+          }
+        },
+        "$abc$937$blif$937$16": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 169 ],
+            "B": [ 145 ],
+            "Y": [ 170 ]
+          }
+        },
+        "$abc$937$blif$937$160": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 171 ],
+            "A1": [ 172 ],
+            "A2": [ 173 ],
+            "A3": [ 174 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 175 ]
+          }
+        },
+        "$abc$937$blif$937$161": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 175 ],
+            "A1": [ 168 ],
+            "S": [ 40 ],
+            "Y": [ 176 ]
+          }
+        },
+        "$abc$937$blif$937$162": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 177 ],
+            "A1": [ 178 ],
+            "S": [ 24 ],
+            "Y": [ 179 ]
+          }
+        },
+        "$abc$937$blif$937$163": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 180 ],
+            "Y": [ 181 ]
+          }
+        },
+        "$abc$937$blif$937$164": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 182 ],
+            "B1": [ 32 ],
+            "Y": [ 183 ]
+          }
+        },
+        "$abc$937$blif$937$165": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 179 ],
+            "B1": [ 181 ],
+            "B2": [ 183 ],
+            "C1": [ 40 ],
+            "Y": [ 184 ]
+          }
+        },
+        "$abc$937$blif$937$166": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 185 ],
+            "A1": [ 186 ],
+            "A2": [ 187 ],
+            "A3": [ 188 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 189 ]
+          }
+        },
+        "$abc$937$blif$937$167": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 40 ],
+            "A2": [ 189 ],
+            "B1": [ 39 ],
+            "X": [ 190 ]
+          }
+        },
+        "$abc$937$blif$937$168": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 176 ],
+            "B1": [ 61 ],
+            "Y": [ 191 ]
+          }
+        },
+        "$abc$937$blif$937$169": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 184 ],
+            "A2": [ 190 ],
+            "B1": [ 191 ],
+            "Y": [ 192 ]
+          }
+        },
+        "$abc$937$blif$937$17": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 169 ],
+            "B": [ 146 ],
+            "X": [ 193 ]
+          }
+        },
+        "$abc$937$blif$937$170": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 19 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 194 ]
+          }
+        },
+        "$abc$937$blif$937$171": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 192 ],
+            "B": [ 194 ],
+            "Y": [ 195 ]
+          }
+        },
+        "$abc$937$blif$937$172": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 196 ],
+            "A1": [ 197 ],
+            "A2": [ 198 ],
+            "A3": [ 199 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 200 ]
+          }
+        },
+        "$abc$937$blif$937$173": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 201 ],
+            "A1": [ 202 ],
+            "A2": [ 203 ],
+            "A3": [ 204 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 205 ]
+          }
+        },
+        "$abc$937$blif$937$174": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 205 ],
+            "A1": [ 200 ],
+            "S": [ 40 ],
+            "Y": [ 206 ]
+          }
+        },
+        "$abc$937$blif$937$175": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 207 ],
+            "A1": [ 208 ],
+            "S": [ 24 ],
+            "Y": [ 209 ]
+          }
+        },
+        "$abc$937$blif$937$176": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 210 ],
+            "Y": [ 211 ]
+          }
+        },
+        "$abc$937$blif$937$177": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 212 ],
+            "B1": [ 32 ],
+            "Y": [ 213 ]
+          }
+        },
+        "$abc$937$blif$937$178": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 209 ],
+            "B1": [ 211 ],
+            "B2": [ 213 ],
+            "C1": [ 40 ],
+            "Y": [ 214 ]
+          }
+        },
+        "$abc$937$blif$937$179": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 215 ],
+            "A1": [ 216 ],
+            "A2": [ 217 ],
+            "A3": [ 218 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 219 ]
+          }
+        },
+        "$abc$937$blif$937$18": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21o_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 220 ],
+            "B1": [ 40 ],
+            "X": [ 221 ]
+          }
+        },
+        "$abc$937$blif$937$180": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 40 ],
+            "A2": [ 219 ],
+            "B1": [ 39 ],
+            "X": [ 222 ]
+          }
+        },
+        "$abc$937$blif$937$181": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 206 ],
+            "B1": [ 61 ],
+            "Y": [ 223 ]
+          }
+        },
+        "$abc$937$blif$937$182": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 214 ],
+            "A2": [ 222 ],
+            "B1": [ 223 ],
+            "Y": [ 224 ]
+          }
+        },
+        "$abc$937$blif$937$183": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 20 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 225 ]
+          }
+        },
+        "$abc$937$blif$937$184": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 224 ],
+            "B": [ 225 ],
+            "Y": [ 226 ]
+          }
+        },
+        "$abc$937$blif$937$19": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 221 ],
+            "Y": [ 227 ]
+          }
+        },
+        "$abc$937$blif$937$2": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__clkinv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 228 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$abc$937$blif$937$20": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 193 ],
+            "B": [ 227 ],
+            "X": [ 229 ]
+          }
+        },
+        "$abc$937$blif$937$21": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xnor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 126 ],
+            "Y": [ 230 ]
+          }
+        },
+        "$abc$937$blif$937$22": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xnor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 220 ],
+            "Y": [ 231 ]
+          }
+        },
+        "$abc$937$blif$937$23": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xnor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 230 ],
+            "B": [ 231 ],
+            "Y": [ 232 ]
+          }
+        },
+        "$abc$937$blif$937$24": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xnor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 78 ],
+            "Y": [ 233 ]
+          }
+        },
+        "$abc$937$blif$937$25": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xnor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 61 ],
+            "Y": [ 234 ]
+          }
+        },
+        "$abc$937$blif$937$26": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xnor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 233 ],
+            "B": [ 234 ],
+            "Y": [ 235 ]
+          }
+        },
+        "$abc$937$blif$937$27": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 125 ],
+            "B": [ 98 ],
+            "X": [ 236 ]
+          }
+        },
+        "$abc$937$blif$937$28": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 237 ],
+            "X": [ 238 ]
+          }
+        },
+        "$abc$937$blif$937$29": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xnor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 236 ],
+            "B": [ 238 ],
+            "Y": [ 239 ]
+          }
+        },
+        "$abc$937$blif$937$3": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__clkinv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 240 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$abc$937$blif$937$30": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 232 ],
+            "B": [ 235 ],
+            "C": [ 239 ],
+            "Y": [ 241 ]
+          }
+        },
+        "$abc$937$blif$937$31": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 169 ],
+            "Y": [ 242 ]
+          }
+        },
+        "$abc$937$blif$937$32": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 169 ],
+            "C": [ 126 ],
+            "Y": [ 243 ]
+          }
+        },
+        "$abc$937$blif$937$33": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 244 ],
+            "B": [ 243 ],
+            "X": [ 245 ]
+          }
+        },
+        "$abc$937$blif$937$34": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__xor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 245 ],
+            "X": [ 246 ]
+          }
+        },
+        "$abc$937$blif$937$35": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o31ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 229 ],
+            "A2": [ 241 ],
+            "A3": [ 246 ],
+            "B1": [ 3 ],
+            "Y": [ 247 ]
+          }
+        },
+        "$abc$937$blif$937$36": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor4bb_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 229 ],
+            "B": [ 241 ],
+            "C_N": [ 246 ],
+            "D_N": [ 3 ],
+            "Y": [ 248 ]
+          }
+        },
+        "$abc$937$blif$937$37": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 245 ],
+            "X": [ 249 ]
+          }
+        },
+        "$abc$937$blif$937$38": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 250 ],
+            "Y": [ 251 ]
+          }
+        },
+        "$abc$937$blif$937$39": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 252 ],
+            "A1": [ 253 ],
+            "A2": [ 254 ],
+            "A3": [ 255 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 256 ]
+          }
+        },
+        "$abc$937$blif$937$4": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__clkinv_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 257 ],
+            "Y": [ 141 ]
+          }
+        },
+        "$abc$937$blif$937$40": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 258 ],
+            "B1": [ 32 ],
+            "X": [ 259 ]
+          }
+        },
+        "$abc$937$blif$937$41": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 260 ],
+            "B1": [ 259 ],
+            "Y": [ 261 ]
+          }
+        },
+        "$abc$937$blif$937$42": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a211o_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 24 ],
+            "A2": [ 27 ],
+            "B1": [ 251 ],
+            "C1": [ 32 ],
+            "X": [ 262 ]
+          }
+        },
+        "$abc$937$blif$937$43": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a31oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 261 ],
+            "A3": [ 262 ],
+            "B1": [ 40 ],
+            "Y": [ 263 ]
+          }
+        },
+        "$abc$937$blif$937$44": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 256 ],
+            "B1": [ 263 ],
+            "Y": [ 264 ]
+          }
+        },
+        "$abc$937$blif$937$45": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 265 ],
+            "A1": [ 266 ],
+            "S": [ 24 ],
+            "Y": [ 267 ]
+          }
+        },
+        "$abc$937$blif$937$46": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 268 ],
+            "Y": [ 269 ]
+          }
+        },
+        "$abc$937$blif$937$47": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 270 ],
+            "B1": [ 32 ],
+            "Y": [ 271 ]
+          }
+        },
+        "$abc$937$blif$937$48": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 267 ],
+            "B1": [ 269 ],
+            "B2": [ 271 ],
+            "C1": [ 39 ],
+            "Y": [ 272 ]
+          }
+        },
+        "$abc$937$blif$937$49": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 273 ],
+            "A1": [ 274 ],
+            "A2": [ 275 ],
+            "A3": [ 276 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 277 ]
+          }
+        },
+        "$abc$937$blif$937$5": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 5 ],
+            "SLEEP": [ 23 ],
+            "X": [ 61 ]
+          }
+        },
+        "$abc$937$blif$937$50": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21a_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 277 ],
+            "B1": [ 40 ],
+            "X": [ 278 ]
+          }
+        },
+        "$abc$937$blif$937$51": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 272 ],
+            "A2": [ 278 ],
+            "B1": [ 59 ],
+            "Y": [ 279 ]
+          }
+        },
+        "$abc$937$blif$937$52": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 21 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 280 ]
+          }
+        },
+        "$abc$937$blif$937$53": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 264 ],
+            "A2": [ 279 ],
+            "B1": [ 280 ],
+            "Y": [ 281 ]
+          }
+        },
+        "$abc$937$blif$937$54": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 78 ],
+            "Y": [ 282 ]
+          }
+        },
+        "$abc$937$blif$937$55": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 125 ],
+            "B": [ 282 ],
+            "Y": [ 283 ]
+          }
+        },
+        "$abc$937$blif$937$56": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__or3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 125 ],
+            "C": [ 282 ],
+            "X": [ 284 ]
+          }
+        },
+        "$abc$937$blif$937$57": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 169 ],
+            "C": [ 284 ],
+            "Y": [ 285 ]
+          }
+        },
+        "$abc$937$blif$937$58": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand4b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 97 ],
+            "B": [ 125 ],
+            "C": [ 78 ],
+            "D": [ 3 ],
+            "Y": [ 286 ]
+          }
+        },
+        "$abc$937$blif$937$59": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 242 ],
+            "B": [ 286 ],
+            "Y": [ 287 ]
+          }
+        },
+        "$abc$937$blif$937$6": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 23 ],
+            "B": [ 5 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$abc$937$blif$937$60": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 283 ],
+            "Y": [ 288 ]
+          }
+        },
+        "$abc$937$blif$937$61": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 169 ],
+            "C": [ 288 ],
+            "Y": [ 289 ]
+          }
+        },
+        "$abc$937$blif$937$62": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 242 ],
+            "B": [ 288 ],
+            "Y": [ 290 ]
+          }
+        },
+        "$abc$937$blif$937$63": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 145 ],
+            "B": [ 169 ],
+            "Y": [ 291 ]
+          }
+        },
+        "$abc$937$blif$937$64": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 288 ],
+            "B": [ 291 ],
+            "Y": [ 292 ]
+          }
+        },
+        "$abc$937$blif$937$65": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 169 ],
+            "C": [ 286 ],
+            "Y": [ 293 ]
+          }
+        },
+        "$abc$937$blif$937$66": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 126 ],
+            "Y": [ 294 ]
+          }
+        },
+        "$abc$937$blif$937$67": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 169 ],
+            "C": [ 294 ],
+            "Y": [ 295 ]
+          }
+        },
+        "$abc$937$blif$937$68": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 170 ],
+            "B": [ 284 ],
+            "Y": [ 296 ]
+          }
+        },
+        "$abc$937$blif$937$69": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 242 ],
+            "B": [ 284 ],
+            "Y": [ 297 ]
+          }
+        },
+        "$abc$937$blif$937$7": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand3b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 23 ],
+            "B": [ 5 ],
+            "C": [ 32 ],
+            "Y": [ 237 ]
+          }
+        },
+        "$abc$937$blif$937$70": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 170 ],
+            "B": [ 288 ],
+            "Y": [ 298 ]
+          }
+        },
+        "$abc$937$blif$937$71": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 170 ],
+            "B": [ 286 ],
+            "Y": [ 299 ]
+          }
+        },
+        "$abc$937$blif$937$72": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 170 ],
+            "B": [ 294 ],
+            "Y": [ 300 ]
+          }
+        },
+        "$abc$937$blif$937$73": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 286 ],
+            "B": [ 291 ],
+            "Y": [ 301 ]
+          }
+        },
+        "$abc$937$blif$937$74": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 242 ],
+            "B": [ 294 ],
+            "Y": [ 302 ]
+          }
+        },
+        "$abc$937$blif$937$75": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 284 ],
+            "B": [ 291 ],
+            "Y": [ 303 ]
+          }
+        },
+        "$abc$937$blif$937$76": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 291 ],
+            "B": [ 294 ],
+            "Y": [ 304 ]
+          }
+        },
+        "$abc$937$blif$937$77": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 234 ],
+            "X": [ 305 ]
+          }
+        },
+        "$abc$937$blif$937$78": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 238 ],
+            "X": [ 306 ]
+          }
+        },
+        "$abc$937$blif$937$79": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 231 ],
+            "X": [ 307 ]
+          }
+        },
+        "$abc$937$blif$937$8": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__and4b_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A_N": [ 23 ],
+            "B": [ 5 ],
+            "C": [ 32 ],
+            "D": [ 39 ],
+            "X": [ 220 ]
+          }
+        },
+        "$abc$937$blif$937$80": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__and3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 29 ],
+            "C": [ 221 ],
+            "X": [ 308 ]
+          }
+        },
+        "$abc$937$blif$937$81": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 233 ],
+            "X": [ 309 ]
+          }
+        },
+        "$abc$937$blif$937$82": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 236 ],
+            "X": [ 310 ]
+          }
+        },
+        "$abc$937$blif$937$83": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 230 ],
+            "X": [ 311 ]
+          }
+        },
+        "$abc$937$blif$937$84": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__lpflow_isobufsrc_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 3 ],
+            "SLEEP": [ 193 ],
+            "X": [ 312 ]
+          }
+        },
+        "$abc$937$blif$937$85": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 313 ],
+            "A1": [ 314 ],
+            "A2": [ 315 ],
+            "A3": [ 316 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 317 ]
+          }
+        },
+        "$abc$937$blif$937$86": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 318 ],
+            "A1": [ 319 ],
+            "A2": [ 320 ],
+            "A3": [ 321 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 322 ]
+          }
+        },
+        "$abc$937$blif$937$87": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 322 ],
+            "A1": [ 317 ],
+            "S": [ 39 ],
+            "Y": [ 323 ]
+          }
+        },
+        "$abc$937$blif$937$88": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 323 ],
+            "Y": [ 324 ]
+          }
+        },
+        "$abc$937$blif$937$89": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 325 ],
+            "A1": [ 326 ],
+            "A2": [ 327 ],
+            "A3": [ 328 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 329 ]
+          }
+        },
+        "$abc$937$blif$937$9": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nand3_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 24 ],
+            "C": [ 220 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$abc$937$blif$937$90": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux2i_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 330 ],
+            "A1": [ 331 ],
+            "S": [ 24 ],
+            "Y": [ 332 ]
+          }
+        },
+        "$abc$937$blif$937$91": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 333 ],
+            "Y": [ 334 ]
+          }
+        },
+        "$abc$937$blif$937$92": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 25 ],
+            "A2": [ 335 ],
+            "B1": [ 32 ],
+            "Y": [ 336 ]
+          }
+        },
+        "$abc$937$blif$937$93": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o221ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 32 ],
+            "A2": [ 332 ],
+            "B1": [ 334 ],
+            "B2": [ 336 ],
+            "C1": [ 39 ],
+            "Y": [ 337 ]
+          }
+        },
+        "$abc$937$blif$937$94": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o211ai_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 39 ],
+            "A2": [ 329 ],
+            "B1": [ 337 ],
+            "C1": [ 40 ],
+            "Y": [ 338 ]
+          }
+        },
+        "$abc$937$blif$937$95": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 59 ],
+            "B": [ 324 ],
+            "Y": [ 339 ]
+          }
+        },
+        "$abc$937$blif$937$96": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__o21ai_0",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 14 ],
+            "A2": [ 61 ],
+            "B1": [ 3 ],
+            "Y": [ 340 ]
+          }
+        },
+        "$abc$937$blif$937$97": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__a21oi_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A1": [ 338 ],
+            "A2": [ 339 ],
+            "B1": [ 340 ],
+            "Y": [ 341 ]
+          }
+        },
+        "$abc$937$blif$937$98": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 342 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$abc$937$blif$937$99": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__mux4_2",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "A0": [ 343 ],
+            "A1": [ 344 ],
+            "A2": [ 345 ],
+            "A3": [ 346 ],
+            "S0": [ 32 ],
+            "S1": [ 24 ],
+            "X": [ 42 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$392": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 302 ],
+            "Q": [ 335 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$393": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 302 ],
+            "Q": [ 49 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$394": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 302 ],
+            "Q": [ 85 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$395": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 302 ],
+            "Q": [ 115 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$396": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 302 ],
+            "Q": [ 152 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$397": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 302 ],
+            "Q": [ 182 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$398": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 302 ],
+            "Q": [ 212 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$399": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 302 ],
+            "Q": [ 270 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$400": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 287 ],
+            "Q": [ 331 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$401": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 287 ],
+            "Q": [ 45 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$402": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 287 ],
+            "Q": [ 81 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$403": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 287 ],
+            "Q": [ 111 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$404": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 287 ],
+            "Q": [ 148 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$405": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 287 ],
+            "Q": [ 178 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$406": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 287 ],
+            "Q": [ 208 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$407": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 287 ],
+            "Q": [ 266 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$408": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 290 ],
+            "Q": [ 328 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$409": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 290 ],
+            "Q": [ 55 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$410": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 290 ],
+            "Q": [ 91 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$411": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 290 ],
+            "Q": [ 102 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$412": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 290 ],
+            "Q": [ 158 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$413": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 290 ],
+            "Q": [ 167 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$414": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 290 ],
+            "Q": [ 199 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$415": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 290 ],
+            "Q": [ 276 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$416": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 297 ],
+            "Q": [ 327 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$417": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 297 ],
+            "Q": [ 54 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$418": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 297 ],
+            "Q": [ 90 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$419": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 297 ],
+            "Q": [ 101 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$420": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 297 ],
+            "Q": [ 157 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$421": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 297 ],
+            "Q": [ 166 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$422": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 297 ],
+            "Q": [ 198 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$423": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 297 ],
+            "Q": [ 275 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$424": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 304 ],
+            "Q": [ 333 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$425": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 304 ],
+            "Q": [ 47 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$426": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 304 ],
+            "Q": [ 83 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$427": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 304 ],
+            "Q": [ 113 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$428": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 304 ],
+            "Q": [ 150 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$429": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 304 ],
+            "Q": [ 180 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$430": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 304 ],
+            "Q": [ 210 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$431": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 304 ],
+            "Q": [ 268 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$432": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 301 ],
+            "Q": [ 330 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$433": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 301 ],
+            "Q": [ 44 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$434": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 301 ],
+            "Q": [ 80 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$435": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 301 ],
+            "Q": [ 110 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$436": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 301 ],
+            "Q": [ 147 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$437": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 301 ],
+            "Q": [ 177 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$438": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 301 ],
+            "Q": [ 207 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$439": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 301 ],
+            "Q": [ 265 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$440": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 292 ],
+            "Q": [ 326 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$441": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 292 ],
+            "Q": [ 53 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$442": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 292 ],
+            "Q": [ 89 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$443": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 292 ],
+            "Q": [ 100 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$444": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 292 ],
+            "Q": [ 156 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$445": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 292 ],
+            "Q": [ 165 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$446": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 292 ],
+            "Q": [ 197 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$447": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 292 ],
+            "Q": [ 274 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$448": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 303 ],
+            "Q": [ 325 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$449": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 303 ],
+            "Q": [ 52 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$450": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 303 ],
+            "Q": [ 88 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$451": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 303 ],
+            "Q": [ 99 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$452": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 303 ],
+            "Q": [ 155 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$453": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 303 ],
+            "Q": [ 164 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$454": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 303 ],
+            "Q": [ 196 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$455": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 303 ],
+            "Q": [ 273 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$456": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 300 ],
+            "Q": [ 316 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$457": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 300 ],
+            "Q": [ 34 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$458": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 300 ],
+            "Q": [ 73 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$459": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 300 ],
+            "Q": [ 121 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$460": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 300 ],
+            "Q": [ 139 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$461": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 300 ],
+            "Q": [ 188 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$462": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 300 ],
+            "Q": [ 218 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$463": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 300 ],
+            "Q": [ 260 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$464": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 299 ],
+            "Q": [ 315 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$465": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 299 ],
+            "Q": [ 228 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$466": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 299 ],
+            "Q": [ 240 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$467": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 299 ],
+            "Q": [ 120 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$468": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 299 ],
+            "Q": [ 257 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$469": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 299 ],
+            "Q": [ 187 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$470": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 299 ],
+            "Q": [ 217 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$471": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 299 ],
+            "Q": [ 26 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$472": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 298 ],
+            "Q": [ 321 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$473": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 298 ],
+            "Q": [ 346 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$474": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 298 ],
+            "Q": [ 69 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$475": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 298 ],
+            "Q": [ 107 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$476": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 298 ],
+            "Q": [ 135 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$477": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 298 ],
+            "Q": [ 174 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$478": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 298 ],
+            "Q": [ 204 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$479": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 298 ],
+            "Q": [ 255 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$480": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 296 ],
+            "Q": [ 320 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$481": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 296 ],
+            "Q": [ 345 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$482": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 296 ],
+            "Q": [ 68 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$483": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 296 ],
+            "Q": [ 106 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$484": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 296 ],
+            "Q": [ 134 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$485": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 296 ],
+            "Q": [ 173 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$486": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 296 ],
+            "Q": [ 203 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$487": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 296 ],
+            "Q": [ 254 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$488": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 295 ],
+            "Q": [ 314 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$489": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 295 ],
+            "Q": [ 31 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$490": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 295 ],
+            "Q": [ 71 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$491": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 295 ],
+            "Q": [ 119 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$492": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 295 ],
+            "Q": [ 137 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$493": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 295 ],
+            "Q": [ 186 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$494": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 295 ],
+            "Q": [ 216 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$495": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 295 ],
+            "Q": [ 258 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$496": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 293 ],
+            "Q": [ 313 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$497": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 293 ],
+            "Q": [ 342 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$498": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 293 ],
+            "Q": [ 64 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$499": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 293 ],
+            "Q": [ 118 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$500": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 293 ],
+            "Q": [ 130 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$501": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 293 ],
+            "Q": [ 185 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$502": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 293 ],
+            "Q": [ 215 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$503": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 293 ],
+            "Q": [ 250 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$504": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 289 ],
+            "Q": [ 319 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$505": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 289 ],
+            "Q": [ 344 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$506": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 289 ],
+            "Q": [ 67 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$507": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 289 ],
+            "Q": [ 105 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$508": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 289 ],
+            "Q": [ 133 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$509": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 289 ],
+            "Q": [ 172 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$510": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 289 ],
+            "Q": [ 202 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$511": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 289 ],
+            "Q": [ 253 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$512": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 6 ],
+            "DE": [ 285 ],
+            "Q": [ 318 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$513": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 7 ],
+            "DE": [ 285 ],
+            "Q": [ 343 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$514": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "DE": [ 285 ],
+            "Q": [ 66 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$515": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 9 ],
+            "DE": [ 285 ],
+            "Q": [ 104 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$516": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 10 ],
+            "DE": [ 285 ],
+            "Q": [ 132 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$517": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 11 ],
+            "DE": [ 285 ],
+            "Q": [ 171 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$518": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 12 ],
+            "DE": [ 285 ],
+            "Q": [ 201 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$519": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__edfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 13 ],
+            "DE": [ 285 ],
+            "Q": [ 252 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$551": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 248 ],
+            "Q": [ 22 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$552": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 305 ],
+            "Q": [ 32 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$553": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 306 ],
+            "Q": [ 39 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$554": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 307 ],
+            "Q": [ 24 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$555": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 308 ],
+            "Q": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$556": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 57 ],
+            "Q": [ 28 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$557": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 309 ],
+            "Q": [ 97 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$558": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 310 ],
+            "Q": [ 125 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$559": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 311 ],
+            "Q": [ 145 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$560": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 312 ],
+            "Q": [ 169 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$561": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 249 ],
+            "Q": [ 244 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$562": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/sync_fifo.v:47.5-84.8"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 247 ],
+            "Q": [ 23 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$701": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 341 ],
+            "Q": [ 14 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$702": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 63 ],
+            "Q": [ 15 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$703": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 96 ],
+            "Q": [ 16 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$704": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 129 ],
+            "Q": [ 17 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$705": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 163 ],
+            "Q": [ 18 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$706": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 195 ],
+            "Q": [ 19 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$707": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 226 ],
+            "Q": [ 20 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$708": {
+          "hide_name": 1,
+          "type": "sky130_fd_sc_hd__dfxtp_1",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 281 ],
+            "Q": [ 21 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$884": {
+          "hide_name": 1,
+          "bits": [ 226 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$888": {
+          "hide_name": 1,
+          "bits": [ 195 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$892": {
+          "hide_name": 1,
+          "bits": [ 163 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$896": {
+          "hide_name": 1,
+          "bits": [ 129 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$900": {
+          "hide_name": 1,
+          "bits": [ 96 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$904": {
+          "hide_name": 1,
+          "bits": [ 63 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$908": {
+          "hide_name": 1,
+          "bits": [ 341 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$910": {
+          "hide_name": 1,
+          "bits": [ 312 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$912": {
+          "hide_name": 1,
+          "bits": [ 311 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$914": {
+          "hide_name": 1,
+          "bits": [ 310 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$916": {
+          "hide_name": 1,
+          "bits": [ 309 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$918": {
+          "hide_name": 1,
+          "bits": [ 308 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$920": {
+          "hide_name": 1,
+          "bits": [ 307 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$922": {
+          "hide_name": 1,
+          "bits": [ 306 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$924": {
+          "hide_name": 1,
+          "bits": [ 305 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$928": {
+          "hide_name": 1,
+          "bits": [ 281 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$930": {
+          "hide_name": 1,
+          "bits": [ 249 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$932": {
+          "hide_name": 1,
+          "bits": [ 248 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$934": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$auto$rtlil.cc:3480:MuxGate$936": {
+          "hide_name": 1,
+          "bits": [ 57 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[0][0][0]$y$192": {
+          "hide_name": 1,
+          "bits": [ 285 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[10][0][0]$y$270": {
+          "hide_name": 1,
+          "bits": [ 301 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[11][0][0]$y$276": {
+          "hide_name": 1,
+          "bits": [ 304 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[12][0][0]$y$284": {
+          "hide_name": 1,
+          "bits": [ 297 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[13][0][0]$y$290": {
+          "hide_name": 1,
+          "bits": [ 290 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[14][0][0]$y$296": {
+          "hide_name": 1,
+          "bits": [ 287 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[15][0][0]$y$302": {
+          "hide_name": 1,
+          "bits": [ 302 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[1][0][0]$y$202": {
+          "hide_name": 1,
+          "bits": [ 289 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[2][0][0]$y$212": {
+          "hide_name": 1,
+          "bits": [ 293 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[3][0][0]$y$220": {
+          "hide_name": 1,
+          "bits": [ 295 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[4][0][0]$y$230": {
+          "hide_name": 1,
+          "bits": [ 296 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[5][0][0]$y$236": {
+          "hide_name": 1,
+          "bits": [ 298 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[6][0][0]$y$242": {
+          "hide_name": 1,
+          "bits": [ 299 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[7][0][0]$y$248": {
+          "hide_name": 1,
+          "bits": [ 300 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[8][0][0]$y$258": {
+          "hide_name": 1,
+          "bits": [ 303 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$memory\\mem$wren[9][0][0]$y$264": {
+          "hide_name": 1,
+          "bits": [ 292 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n188": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n189": {
+          "hide_name": 1,
+          "bits": [ 27 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n190": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n191": {
+          "hide_name": 1,
+          "bits": [ 75 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n192": {
+          "hide_name": 1,
+          "bits": [ 141 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n193": {
+          "hide_name": 1,
+          "bits": [ 61 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n194": {
+          "hide_name": 1,
+          "bits": [ 59 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n195": {
+          "hide_name": 1,
+          "bits": [ 237 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n196": {
+          "hide_name": 1,
+          "bits": [ 220 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n197": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n198": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n200": {
+          "hide_name": 1,
+          "bits": [ 78 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n201": {
+          "hide_name": 1,
+          "bits": [ 98 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n202": {
+          "hide_name": 1,
+          "bits": [ 126 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n203": {
+          "hide_name": 1,
+          "bits": [ 146 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n204": {
+          "hide_name": 1,
+          "bits": [ 170 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n205": {
+          "hide_name": 1,
+          "bits": [ 193 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n206": {
+          "hide_name": 1,
+          "bits": [ 221 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n207": {
+          "hide_name": 1,
+          "bits": [ 227 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n208": {
+          "hide_name": 1,
+          "bits": [ 229 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n209": {
+          "hide_name": 1,
+          "bits": [ 230 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n210": {
+          "hide_name": 1,
+          "bits": [ 231 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n211": {
+          "hide_name": 1,
+          "bits": [ 232 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n212": {
+          "hide_name": 1,
+          "bits": [ 233 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n213": {
+          "hide_name": 1,
+          "bits": [ 234 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n214": {
+          "hide_name": 1,
+          "bits": [ 235 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n215": {
+          "hide_name": 1,
+          "bits": [ 236 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n216": {
+          "hide_name": 1,
+          "bits": [ 238 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n217": {
+          "hide_name": 1,
+          "bits": [ 239 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n218": {
+          "hide_name": 1,
+          "bits": [ 241 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n219": {
+          "hide_name": 1,
+          "bits": [ 242 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n220": {
+          "hide_name": 1,
+          "bits": [ 243 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n221": {
+          "hide_name": 1,
+          "bits": [ 245 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n222": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n226": {
+          "hide_name": 1,
+          "bits": [ 251 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n227": {
+          "hide_name": 1,
+          "bits": [ 256 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n228": {
+          "hide_name": 1,
+          "bits": [ 259 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n229": {
+          "hide_name": 1,
+          "bits": [ 261 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n230": {
+          "hide_name": 1,
+          "bits": [ 262 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n231": {
+          "hide_name": 1,
+          "bits": [ 263 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n232": {
+          "hide_name": 1,
+          "bits": [ 264 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n233": {
+          "hide_name": 1,
+          "bits": [ 267 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n234": {
+          "hide_name": 1,
+          "bits": [ 269 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n235": {
+          "hide_name": 1,
+          "bits": [ 271 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n236": {
+          "hide_name": 1,
+          "bits": [ 272 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n237": {
+          "hide_name": 1,
+          "bits": [ 277 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n238": {
+          "hide_name": 1,
+          "bits": [ 278 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n239": {
+          "hide_name": 1,
+          "bits": [ 279 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n240": {
+          "hide_name": 1,
+          "bits": [ 280 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n242": {
+          "hide_name": 1,
+          "bits": [ 282 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n243": {
+          "hide_name": 1,
+          "bits": [ 283 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n244": {
+          "hide_name": 1,
+          "bits": [ 284 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n246": {
+          "hide_name": 1,
+          "bits": [ 286 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n248": {
+          "hide_name": 1,
+          "bits": [ 288 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n251": {
+          "hide_name": 1,
+          "bits": [ 291 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n254": {
+          "hide_name": 1,
+          "bits": [ 294 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n273": {
+          "hide_name": 1,
+          "bits": [ 317 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n274": {
+          "hide_name": 1,
+          "bits": [ 322 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n275": {
+          "hide_name": 1,
+          "bits": [ 323 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n276": {
+          "hide_name": 1,
+          "bits": [ 324 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n277": {
+          "hide_name": 1,
+          "bits": [ 329 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n278": {
+          "hide_name": 1,
+          "bits": [ 332 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n279": {
+          "hide_name": 1,
+          "bits": [ 334 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n280": {
+          "hide_name": 1,
+          "bits": [ 336 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n281": {
+          "hide_name": 1,
+          "bits": [ 337 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n282": {
+          "hide_name": 1,
+          "bits": [ 338 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n283": {
+          "hide_name": 1,
+          "bits": [ 339 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n284": {
+          "hide_name": 1,
+          "bits": [ 340 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n286": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n287": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n288": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n289": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n290": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n291": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n292": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n293": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n294": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n295": {
+          "hide_name": 1,
+          "bits": [ 50 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n296": {
+          "hide_name": 1,
+          "bits": [ 51 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n297": {
+          "hide_name": 1,
+          "bits": [ 56 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n298": {
+          "hide_name": 1,
+          "bits": [ 58 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n299": {
+          "hide_name": 1,
+          "bits": [ 60 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n300": {
+          "hide_name": 1,
+          "bits": [ 62 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n302": {
+          "hide_name": 1,
+          "bits": [ 65 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n303": {
+          "hide_name": 1,
+          "bits": [ 70 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n304": {
+          "hide_name": 1,
+          "bits": [ 72 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n305": {
+          "hide_name": 1,
+          "bits": [ 74 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n306": {
+          "hide_name": 1,
+          "bits": [ 76 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n307": {
+          "hide_name": 1,
+          "bits": [ 77 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n308": {
+          "hide_name": 1,
+          "bits": [ 79 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n309": {
+          "hide_name": 1,
+          "bits": [ 82 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n310": {
+          "hide_name": 1,
+          "bits": [ 84 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n311": {
+          "hide_name": 1,
+          "bits": [ 86 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n312": {
+          "hide_name": 1,
+          "bits": [ 87 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n313": {
+          "hide_name": 1,
+          "bits": [ 92 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n314": {
+          "hide_name": 1,
+          "bits": [ 93 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n315": {
+          "hide_name": 1,
+          "bits": [ 94 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n316": {
+          "hide_name": 1,
+          "bits": [ 95 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n318": {
+          "hide_name": 1,
+          "bits": [ 103 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n319": {
+          "hide_name": 1,
+          "bits": [ 108 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n320": {
+          "hide_name": 1,
+          "bits": [ 109 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n321": {
+          "hide_name": 1,
+          "bits": [ 112 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n322": {
+          "hide_name": 1,
+          "bits": [ 114 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n323": {
+          "hide_name": 1,
+          "bits": [ 116 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n324": {
+          "hide_name": 1,
+          "bits": [ 117 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n325": {
+          "hide_name": 1,
+          "bits": [ 122 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n326": {
+          "hide_name": 1,
+          "bits": [ 123 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n327": {
+          "hide_name": 1,
+          "bits": [ 124 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n328": {
+          "hide_name": 1,
+          "bits": [ 127 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n329": {
+          "hide_name": 1,
+          "bits": [ 128 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n331": {
+          "hide_name": 1,
+          "bits": [ 131 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n332": {
+          "hide_name": 1,
+          "bits": [ 136 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n333": {
+          "hide_name": 1,
+          "bits": [ 138 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n334": {
+          "hide_name": 1,
+          "bits": [ 140 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n335": {
+          "hide_name": 1,
+          "bits": [ 142 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n336": {
+          "hide_name": 1,
+          "bits": [ 143 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n337": {
+          "hide_name": 1,
+          "bits": [ 144 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n338": {
+          "hide_name": 1,
+          "bits": [ 149 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n339": {
+          "hide_name": 1,
+          "bits": [ 151 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n340": {
+          "hide_name": 1,
+          "bits": [ 153 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n341": {
+          "hide_name": 1,
+          "bits": [ 154 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n342": {
+          "hide_name": 1,
+          "bits": [ 159 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n343": {
+          "hide_name": 1,
+          "bits": [ 160 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n344": {
+          "hide_name": 1,
+          "bits": [ 161 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n345": {
+          "hide_name": 1,
+          "bits": [ 162 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n347": {
+          "hide_name": 1,
+          "bits": [ 168 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n348": {
+          "hide_name": 1,
+          "bits": [ 175 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n349": {
+          "hide_name": 1,
+          "bits": [ 176 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n350": {
+          "hide_name": 1,
+          "bits": [ 179 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n351": {
+          "hide_name": 1,
+          "bits": [ 181 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n352": {
+          "hide_name": 1,
+          "bits": [ 183 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n353": {
+          "hide_name": 1,
+          "bits": [ 184 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n354": {
+          "hide_name": 1,
+          "bits": [ 189 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n355": {
+          "hide_name": 1,
+          "bits": [ 190 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n356": {
+          "hide_name": 1,
+          "bits": [ 191 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n357": {
+          "hide_name": 1,
+          "bits": [ 192 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n358": {
+          "hide_name": 1,
+          "bits": [ 194 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n360": {
+          "hide_name": 1,
+          "bits": [ 200 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n361": {
+          "hide_name": 1,
+          "bits": [ 205 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n362": {
+          "hide_name": 1,
+          "bits": [ 206 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n363": {
+          "hide_name": 1,
+          "bits": [ 209 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n364": {
+          "hide_name": 1,
+          "bits": [ 211 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n365": {
+          "hide_name": 1,
+          "bits": [ 213 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n366": {
+          "hide_name": 1,
+          "bits": [ 214 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n367": {
+          "hide_name": 1,
+          "bits": [ 219 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n368": {
+          "hide_name": 1,
+          "bits": [ 222 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n369": {
+          "hide_name": 1,
+          "bits": [ 223 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n370": {
+          "hide_name": 1,
+          "bits": [ 224 ],
+          "attributes": {
+          }
+        },
+        "$abc$937$new_n371": {
+          "hide_name": 1,
+          "bits": [ 225 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:7.37-7.40"
+          }
+        },
+        "din": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:13.37-13.40"
+          }
+        },
+        "dout": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:15.37-15.41"
+          }
+        },
+        "empty": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:17.37-17.42"
+          }
+        },
+        "full": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:16.37-16.41"
+          }
+        },
+        "mem[0]": {
+          "hide_name": 0,
+          "bits": [ 318, 343, 66, 104, 132, 171, 201, 252 ],
+          "attributes": {
+          }
+        },
+        "mem[10]": {
+          "hide_name": 0,
+          "bits": [ 330, 44, 80, 110, 147, 177, 207, 265 ],
+          "attributes": {
+          }
+        },
+        "mem[11]": {
+          "hide_name": 0,
+          "bits": [ 333, 47, 83, 113, 150, 180, 210, 268 ],
+          "attributes": {
+          }
+        },
+        "mem[12]": {
+          "hide_name": 0,
+          "bits": [ 327, 54, 90, 101, 157, 166, 198, 275 ],
+          "attributes": {
+          }
+        },
+        "mem[13]": {
+          "hide_name": 0,
+          "bits": [ 328, 55, 91, 102, 158, 167, 199, 276 ],
+          "attributes": {
+          }
+        },
+        "mem[14]": {
+          "hide_name": 0,
+          "bits": [ 331, 45, 81, 111, 148, 178, 208, 266 ],
+          "attributes": {
+          }
+        },
+        "mem[15]": {
+          "hide_name": 0,
+          "bits": [ 335, 49, 85, 115, 152, 182, 212, 270 ],
+          "attributes": {
+          }
+        },
+        "mem[1]": {
+          "hide_name": 0,
+          "bits": [ 319, 344, 67, 105, 133, 172, 202, 253 ],
+          "attributes": {
+          }
+        },
+        "mem[2]": {
+          "hide_name": 0,
+          "bits": [ 313, 342, 64, 118, 130, 185, 215, 250 ],
+          "attributes": {
+          }
+        },
+        "mem[3]": {
+          "hide_name": 0,
+          "bits": [ 314, 31, 71, 119, 137, 186, 216, 258 ],
+          "attributes": {
+          }
+        },
+        "mem[4]": {
+          "hide_name": 0,
+          "bits": [ 320, 345, 68, 106, 134, 173, 203, 254 ],
+          "attributes": {
+          }
+        },
+        "mem[5]": {
+          "hide_name": 0,
+          "bits": [ 321, 346, 69, 107, 135, 174, 204, 255 ],
+          "attributes": {
+          }
+        },
+        "mem[6]": {
+          "hide_name": 0,
+          "bits": [ 315, 228, 240, 120, 257, 187, 217, 26 ],
+          "attributes": {
+          }
+        },
+        "mem[7]": {
+          "hide_name": 0,
+          "bits": [ 316, 34, 73, 121, 139, 188, 218, 260 ],
+          "attributes": {
+          }
+        },
+        "mem[8]": {
+          "hide_name": 0,
+          "bits": [ 325, 52, 88, 99, 155, 164, 196, 273 ],
+          "attributes": {
+          }
+        },
+        "mem[9]": {
+          "hide_name": 0,
+          "bits": [ 326, 53, 89, 100, 156, 165, 197, 274 ],
+          "attributes": {
+          }
+        },
+        "rd_en": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:11.37-11.42"
+          }
+        },
+        "rd_ptr": {
+          "hide_name": 0,
+          "bits": [ 32, 39, 24, 40, 28 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:28.24-28.30"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:8.37-8.42"
+          }
+        },
+        "wr_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:10.37-10.42"
+          }
+        },
+        "wr_ptr": {
+          "hide_name": 0,
+          "bits": [ 97, 125, 145, 169, 244 ],
+          "attributes": {
+            "src": "rtl/sync_fifo.v:27.24-27.30"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+read_verilog rtl/sync_fifo.v
+
+hierarchy -check -top sync_fifo
+
+proc
+opt
+check
+
+synth -top sync_fifo
+
+stat
+
+write_verilog -noattr results/sync_fifo_synth.v
+write_json results/sync_fifo_synth.json
+
+show -format png -prefix sync_fifo_schematic sync_fifo
+show -format svg -prefix sync_fifo_schematic sync_fifo
+
